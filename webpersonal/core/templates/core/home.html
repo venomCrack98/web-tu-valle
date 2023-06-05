@@ -1,0 +1,23 @@
+{%extends 'core/base.html'%}
+
+{%block title%}Tu valle{%endblock%}
+   {%block background%}{% load static%} {% static 'core/assets/img/index2.jpg'%}{%endblock%}
+{%block header%}
+<div class="container">
+    <div class="masthead-subheading">Bienvenido al valle del cauca</div>
+    <div class="masthead-heading text-uppercase">TU VALLE!</div>
+    <a class="btn btn-primary btn-xl text-uppercase" href="{% url 'explorer'%}">Conocer</a>
+</div>
+{%endblock%}
+{%block content%}
+<div class="container">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase">¡Bienvenidos a Tu valle!</h2>
+        <h3 class="section-subheading text-muted">Te invitamos a explorar este maravilloso destino ubicado en el suroeste de Colombia. En nuestra plataforma, encontrarás todo lo necesario para planificar y disfrutar de una experiencia inolvidable en el Valle del Cauca.
+            Sumérgete en la riqueza cultural de sus ciudades, explora su exuberante naturaleza y maravíllate con sus hermosos paisajes. Descubre la hospitalidad de su gente, prueba su deliciosa gastronomía y sumérgete en sus tradiciones.</h3>
+            <h3 class="section-subheading text-muted">Desde las vibrantes calles de Cali hasta los impresionantes parques naturales, el Valle del Cauca tiene algo especial para cada tipo de viajero. Ya sea que estés buscando aventura, relajación o una conexión más profunda con la historia y la cultura, este destino lo tiene todo.En nuestra página web, encontrarás información detallada sobre los mejores lugares para visitar, actividades emocionantes, opciones de alojamiento y consejos útiles para hacer de tu viaje una experiencia inolvidable.¡Prepárate para descubrir el encanto del Valle del Cauca! Te invitamos a explorar nuestra página web y dejarte inspirar para planificar tu próxima aventura en este destino mágico.</h3>
+    </div>
+</div>
+{%endblock%}
+{%block linea%}<hr>{%endblock%}
+ 

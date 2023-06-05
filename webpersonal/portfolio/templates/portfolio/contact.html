@@ -1,0 +1,41 @@
+{%extends 'core/base.html'%}
+{%block title%}contacto{%endblock%}
+{%block background%}{% load static%} {% static 'core/assets/img/explorer4.jpg'%}{%endblock%}
+{%block content%}
+
+
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            {% for project in projects%}
+            <ul class="timeline">
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{project.image.url}}" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">{{project.title}}</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-muted">{{project.description}}</p></div>
+                    </div>
+                </li>
+           {% endfor %}
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+{%endblock%}
+{%block linea%}<hr>{%endblock%}

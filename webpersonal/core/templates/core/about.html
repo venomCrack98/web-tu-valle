@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{%block title%}Acerca de{%endblock%}
+{%block background%}{% load static%} {% static 'core/assets/img/explorer3.jpg'%}{%endblock%}
+{%block header%}
+<div class="container">
+    <div class="masthead-heading text-uppercase">QUIENES SOMOS?</div>
+</div>
+{%endblock%}
+{% block content%}
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Tu valle!</h2>
+            <h3 class="section-subheading text-muted">¡Bienvenidos a nuestra página web de turismo! Somos un grupo de entusiastas universitarios de la carrera de Ingeniería de Sistemas que hemos unido nuestra pasión por la tecnología y los viajes para crear una plataforma en línea única y emocionante.
+                Nuestra historia comenzó en las aulas de la universidad, donde nos dimos cuenta de que podíamos combinar nuestros conocimientos en programación y diseño web con nuestra curiosidad por explorar diferentes destinos turísticos. Decidimos poner en práctica nuestros talentos y emprendimiento, y así nació nuestro proyecto: una página web de turismo que ofrece a los viajeros una experiencia memorable.
+                </h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="{% static 'core/assets/img/team/juan_jose.jpg'%}" alt="..." />
+                    <h4>Juan Jose</h4>
+                    <p class="text-muted">Technical Lead</p>                                       
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="{% static 'core/assets/img/team/js.jpg'%}" alt="..." />
+                    <h4>Juan Sebastian</h4>
+                    <p class="text-muted">Professional Developer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lo que nos diferencia de otras plataformas es nuestro enfoque en brindar información completa y detallada sobre destinos turísticos de todo el mundo. Hemos recopilado datos, imágenes y reseñas de cada lugar para que los visitantes puedan tomar decisiones informadas al planificar sus aventuras. Además, nuestra página web cuenta con una interfaz amigable y fácil de usar, diseñada pensando en la comodidad de los usuarios.</p></div>
+        </div>
+    </div>
+</section>
+{%endblock%}
+{%block linea%}<hr>{%endblock%}
